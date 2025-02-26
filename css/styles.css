@@ -1,123 +1,144 @@
 /* Ini CSS External */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body {
-    font-family: fantasy;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header & Navigation */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 50px;
+    background-color: #343a40;
+    color: white;
 }
 
 .logo-company {
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/500);
+    background-image: url(../images/logo.png);
     background-size: cover;
     border-radius: 50%;
 }
 
-nav {
-    display: flex;
-}
-
-nav>a {
-    border: 1px solid;
-    color: black;
+nav a {
     text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
+    color: white;
+    padding: 10px 15px;
+    background-color: #495057;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.no-border-radius {
-    border-radius: 0px;
+nav a:hover {
+    background-color: #17a2b8;
 }
 
-.no-border-radius-right {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 4px;
-}
-
-.no-border-radius-left {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 0px;
-}
-
-main>header {
+/* Main Content */
+main {
     text-align: center;
+    padding: 40px 20px;
 }
 
-.main-content {
-    display: flex;
-    gap: 24px;
+h1 {
+    font-size: 2.5rem;
+    color: #343a40;
 }
 
+h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Banner Autoslide */
 .main-container {
-    border: 1px solid;
-    height: 400px;
-    flex: 1;
-    align-content: center;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .main-banner {
-    height: 300px;
+    width: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .banner-img-1 {
-    background-image: url(https://picsum.photos/600);
+    background-image: url('https://source.unsplash.com/300x200/?music');
 }
-
 .banner-img-2 {
-    background-image: url(https://picsum.photos/650);
+    background-image: url('https://source.unsplash.com/300x200/?concert');
 }
-
 .banner-img-3 {
-    background-image: url(https://picsum.photos/675);
+    background-image: url('https://source.unsplash.com/300x200/?guitar');
 }
 
-#our-package-section>header {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    background-color: aliceblue;
+/* Form Contact Us */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 50%;
+    text-align: left;
 }
 
-.our-package-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: center;
-    text-align: center;
+form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-#call-us-section>header {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    background-color: antiquewhite;
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.call-us-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: center;
-    text-align: center;
+form button {
+    background: #17a2b8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+form button:hover {
+    background: #138496;
+}
+
+/* Sections */
+#our-package-section, #call-us-section {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 footer {
+    background: #343a40;
+    color: white;
     text-align: center;
-}
-
-/* Responsive Design */
-@media only screen and (max-width: 480px) {
-    .main-content {
-        flex-direction: column;
-    }
+    padding: 20px;
+    margin-top: 30px;
 }
