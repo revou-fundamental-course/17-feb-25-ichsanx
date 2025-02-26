@@ -13,7 +13,7 @@ body {
 .logo-company {
     height: 50px;
     width: 50px;
-    background-image: url('image/favicon.jfif');
+    background-image: url('image/logo.png');
     background-size: cover;
     border-radius: 50%;
 }
