@@ -1,3 +1,14 @@
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif; /* Bisa diganti dengan 'Anton' */
+    font-size: 48px; /* Sesuaikan ukuran */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333; /* Sesuaikan warna */
+}
+
+
+
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
@@ -48,3 +59,5 @@
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+
