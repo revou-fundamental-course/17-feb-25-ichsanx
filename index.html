@@ -5,95 +5,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gudang Berisik</title>
+    <title>GUDANG BERISIK</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+
+
     <!-- Header & Navigation -->
     <header class="main-header">
         <!-- Logo Company -->
         <div class="logo-company"></div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Musical Instrument Shop</a>
+            <div class="ms-auto">
+                <a href="#" class="btn btn-outline-dark me-2">Home</a>
+                <a href="#" class="btn btn-outline-dark me-2">Our Package</a>
+                <a href="#" class="btn btn-dark">Call Us</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <div class="text-center hero" id="hero-section">
+            <h1>GUDANG BERISIK MUSIC</h1>
+            <p>Welcome to my Store</p>
+        </div>
+        <div class="row mt-4">
 
-        <nav>
-            <a href="#" class="no-border-radius-right">Home</a>
-            <a href="#our-package-section" class="no-border-radius">Our Packages</a>
-            <a href="#call-us-section" class="no-border-radius-left">Call Us</a>
-        </nav>
-    </header>
-
-    <hr>
-
-    <!-- Main Content -->
-    <main>
-        <header>
-            <h1>GUDANG BERISIK</h1>
-
-            <h4>Welcome to the Gudang Berisik Music</h4>
-        </header>
-
-        <section class="main-content">
-            <!-- Banner Autoslide -->
-            <aside class="main-container">
-                <div class="main-banner banner-img-1"></div>
-                <div class="main-banner banner-img-2"></div>
-                <div class="main-banner banner-img-3"></div>
-            </aside>
-
-            <!-- Form Contact Us -->
-            <aside class="main-container">
-                <header>
-                    <h2>Form Contact Us</h2>
-                </header>
-
-                <!-- Form Validation -->
-                <form>
-                    <div>
-                        <label for="name-input">Name:</label>
-                        <input type="text" id="name-input" required>
+            <div class="col-md-6">
+                <div class="card p-4 text-center">
+                    <!-- Slideshow Gambar -->
+                    <div class="slideshow-container">
+                        <img class="slide active" src="images/poto.png" alt="Gambar 1">
+                        <img class="slide" src="images/poto2.png" alt="Gambar 2">
+                        <img class="slide" src="images/poto3.png" alt="Gambar 3">
+                    
+                        <!-- Tombol navigasi -->
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
                     </div>
+            
+                    <p class="mt-3"><em>"Alat Music yang recomended."</em></p>
+                    <p><strong>Florence Hughes</strong></p>
+                    <p class="text-muted">Ibu Rumah Tangga, 28</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h3>Contact Us</h3>
+                    <p>Sales akan menghubungi Anda dalam 1x24 jam setelah data kami terima.</p>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
 
-                    <div>
-                        <button type="button" onclick="validateForm();">Submit</button>
-                    </div>
-                </form>
-            </aside>
-        </section>
-
-        <!-- Our Packages Section -->
-        <section id="our-package-section">
-            <header>
-                <h2>Our Packages</h2>
-            </header>
-
-            <!-- Content Our Packages -->
-            <article class="our-package-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
-            </article>
-        </section>
-
-        <!-- Call Us Section -->
-        <section id="call-us-section">
-            <header>
-                <h2>Call Us</h2>
-            </header>
-
-            <!-- Content Call Us Packages -->
-            <article class="call-us-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing ....</p>
-            </article>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>Made by Yama@2025</p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+                            <select class="form-control" id="interest" required>
+                                <option value="" selected>Apa alat musik yang Anda cari?</option>
+                                <option>Gitar</option>
+                                <option>Drum</option>
+                                <option>Keyboard</option>
+                            </select>
+                            
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <h5><strong>Use this space to provide users with more information about your offer.</strong></h5>
+            <ul class="feature-list mt-3">
+                <li><span class="feature-icon">1</span> Your first feature, written in the form of a benefit statement.</li>
+                <li><span class="feature-icon">2</span> Your second feature, written in the form of a benefit statement.</li>
+                <li><span class="feature-icon">3</span> Your third feature, written in the form of a benefit statement.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
